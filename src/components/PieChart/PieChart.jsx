@@ -28,7 +28,7 @@ const PieChart = () => {
       labels: labels,
       values: values,
       type: 'pie',
-      hole: 0.7, // Add a hole to create a donut chart
+      hole: 0.6, // Add a hole to create a donut chart
       marker: {
         colors: ['#0CD664', '#EE8484', '#F6DC7D'],
       },
@@ -42,7 +42,7 @@ const PieChart = () => {
         data={plotData}
         layout={{
           width: 480, 
-          height: 356, 
+          height: 256, 
           colors: ['#0CD664', '#EE8484', '#F6DC7D'],
           paper_bgcolor:'rgba(0,0,0,0)',
           plot_bgcolor:'rgba(0,0,0,0)'

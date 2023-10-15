@@ -60,29 +60,29 @@ const Dashboard = () => {
 
   return (
     <div className='flex bg-[#F8FAFF] xl:flex xl:flex-col sm:flex sm:flex-col xs:flex xs:flex-col'>
-        <div className='rounded-lg mt-[2.5rem] mb-[2.5rem] mx-[2.688rem] bg-gradient-to-b from-[#4285F4] to-[#3C83F9] w-[17.5rem] h-[59rem] xl:ml-[1rem] xl:w-[90%] xl:h-[8rem] sm:ml-[1rem] sm:w-[90%] sm:h-[8rem] xs:ml-[1rem] xs:w-[90%] xs:h-[18rem] xxl:mr-0'>
+        <div className='rounded-lg mt-[2.5rem] mb-[2.5rem] mx-[2.688rem] bg-gradient-to-b from-[#4285F4] to-[#3C83F9] w-[17.5rem] h-[59rem] xl:ml-[1rem] xl:w-[90%] xl:h-[9rem] sm:ml-[1rem] sm:w-[90%] sm:h-[9rem] xs:ml-[1rem] xs:pl-[1rem] xs:pt-[1rem] xs:w-[90%] xs:h-[16rem] xxl:mr-0'>
             <div className='pt-[3.75rem] pl-[3.125rem] xl:p-[5px] xl:flex xl:flex-col sm:p-[5px] sm:flex sm:flex-col xs:p-[5px] xs:flex xs:flex-col'>
             <h1 className='text-white font-montserrat font-bold text-[2.25rem] xl:text-[2rem] sm:text-[1.5rem] xs:text-[1.5rem]'>Board.</h1>
-            <div className='mt-[3.75rem] xl:flex xl:flex-column xl:justify-evenly xl:m-0 sm:flex sm:flex-column sm:justify-evenly sm:m-0 xs:flex xs:flex-col xs:justify-evenly xs:m-0'>
+            <div className='mt-[3.75rem] xl:flex xl:flex-column xl:justify-evenly xl:m-0 sm:flex sm:flex-column sm:justify-evenly sm:m-0 xs:grid  xs:justify-evenly xs:m-0'>
             <div className='flex mt-[60px] xl:mt-[2.5rem] sm:mt-[2.5rem] xs:mt-[1.5rem]'>
                 <div dangerouslySetInnerHTML={{ __html: dashboardsvg }}/>
-                <h4 className='ml-[20px] font-montserrat text-white font-bold text-[18px] xl:m-0 xl:text-[14px] sm:m-0 sm:text-[12px]'>Dashboard</h4>
+                <h4 className='ml-[20px] font-montserrat text-white font-bold text-[18px] xl:m-0 xl:text-[14px] sm:m-0 sm:text-[12px] xs:text-[12px]'>Dashboard</h4>
             </div>
-            <div className='flex mt-[2.5rem]'>
+            <div className='flex mt-[2.5rem] xs:mt-[1rem]'>
                 <div dangerouslySetInnerHTML={{ __html: transactionsvg }}/>
-                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px]'>Transactions</h4>
+                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px] xs:text-[12px]'>Transactions</h4>
             </div>
-            <div className='flex mt-[2.5rem]'>
+            <div className='flex mt-[2.5rem] xs:mt-[1rem]'>
                 <div dangerouslySetInnerHTML={{ __html: schedulessvg }}/>
-                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px]'>Schedules</h4>
+                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px] xs:text-[12px]'>Schedules</h4>
             </div>
-            <div className='flex mt-[2.5rem]'>
+            <div className='flex mt-[2.5rem] xs:mt-[1rem]'>
                 <div dangerouslySetInnerHTML={{ __html: userssvg }}/>
-                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px]'>Users</h4>
+                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px] xs:text-[12px]'>Users</h4>
             </div>
-            <div className='flex mt-[2.5rem]'>
+            <div className='flex mt-[2.5rem] xs:mt-[1rem]'>
                 <div dangerouslySetInnerHTML={{ __html: settingssvg }}/>
-                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px]'>Settings</h4>
+                <h4 className='ml-[20px] xl:m-0 font-montserrat text-white text-[18px] xl:text-[14px] sm:m-0 sm:text-[12px] xs:text-[12px]'>Settings</h4>
             </div>
             </div>
         </div>
@@ -102,11 +102,11 @@ const Dashboard = () => {
             <div>
                 <Cards/>
             </div>
-            <div className='border border-[#E0E0E0] bg-white rounded-xl mt-[25.83px]'>
+            <div className='border border-[#E0E0E0] bg-white rounded-xl mt-[25.83px] xs:mx-[15px]' style={{ overflow: 'scroll', maxWidth: '100%' }}>
                 <BarGraph />
             </div>
             <div className='flex mt-[25.83px] xl:flex xl:flex-col xl:justify-center sm:flex sm:flex-col sm:justify-center xs:flex xs:flex-col xs:justify-center xs:mx-[15px] xxl:flex xxl:flex-col xxl:justify-center xxl:mx-[15px]'>
-                <div className='bg-white border border-[#E0E0E0] rounded-xl'>
+                <div className='bg-white border border-[#E0E0E0] rounded-xl ' style={{ overflow: 'scroll', maxWidth: '100%' }}>
                     <PieChart/>
                 </div>
                 <div onClick={showAddProfile} className={userData? "border border-[#E0E0E0] rounded-xl bg-white w-[480px] h-[256px] ml-[40px] xl:w-[100%] xl:ml-0 sm:w-[100%] sm:ml-0 xs:ml-0 xs:w-[100%] xxl:w-[90%] xl:mt-[20px] xs:mt-[20px] xxl:mt-[20px]" : "border border-[#E0E0E0] bg-white ml-[40px] w-[480px] h-[256px] flex items-center justify-center xl:w-[100%] xl:ml-0 sm:w-[100%] sm:ml-0 xs:ml-0 xs:w-[90%] rounded-xl xxl:w-[100%] xl:mt-[20px] xs:mt-[20px] xxl:mt-[20px]"}>

@@ -233,7 +233,7 @@ const BarGraph = () => {
         data={plotData}
         className=""
         layout={{
-          width: 500,
+          width: 800,
           height: 339,
           colors: ['#0CD664', '#EE8484'],
           paper_bgcolor: 'rgba(0,0,0,0)',
