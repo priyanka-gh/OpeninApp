@@ -46,25 +46,25 @@ const AddProfile = () => {
     <div>
       {
       userData ? 
-      <div className='pb-[50px]  pt-[48px] pl-[39px] pr-[80px]'>
-        <h3 className='font-Figtree font-bold text-[24px] mb-[60px]'>{userData.name}</h3>
-        <div className='flex'>
+      <div className='pb-[50px] pt-[48px] pl-[39px] pr-[80px] xs:pt-[20px]'>
+        <h3 className='font-Figtree font-bold text-[24px] mb-[60px] xs:mb-[20px]'>{userData.name}</h3>
+        <div className='flex  xs:grid xs:grid-rows-1 '>
         <div className='w-full flex flex-column  xs:flex xs:flex-col'>
           <div className='flex'>
             <div className='h-[28px] w-[28px] pb-[6px] pt-[5px] pl-[6px] pr-[5px] bg-[#E9F9EB] rounded-xxl mr-[12px]' dangerouslySetInnerHTML={{ __html: whatsappsvg }}/>
             <h4>{userData.phone}</h4>
           </div>
-          <div className='flex mt-[26px]'>
+          <div className='flex mt-[26px] xs:mt-[10px]'>
             <div className='h-[28px] w-[28px] p-[2px] bg-[#EBE6F9] rounded-xxl mr-[12px]' dangerouslySetInnerHTML={{ __html: mailsvg }}/>
             <h4>{userData.email}</h4>
           </div>
         </div>
         <div className='w-full flex flex-column'>
-          <div className='flex'>
+          <div className='flex xs:mt-[10px]'>
             <div className='h-[28px] w-[28px] p-[4.666px] bg-[#FFE9EC] rounded-xxl mr-[12px]' dangerouslySetInnerHTML={{ __html: instagramsvg }}/>
             <h4>{userData.social.instaLink}</h4>
           </div>
-          <div className='flex mt-[26px]'>
+          <div className='flex mt-[26px] xs:mt-[10px]'>
             <div className='h-[28px] w-[28px] p-[4.666px] bg-[#FFE9EC] rounded-xxl mr-[12px]' dangerouslySetInnerHTML={{ __html: ytubesvg }}/>
             <h4>{userData.social.ytLink}</h4>
           </div>

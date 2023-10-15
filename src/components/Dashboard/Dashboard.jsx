@@ -114,7 +114,7 @@ const Dashboard = () => {
                 <div className='bg-white border border-[#E0E0E0] rounded-xl ' style={{ overflow: 'scroll', maxWidth: '100%' }}>
                     <PieChart/>
                 </div>
-                <div onClick={showAddProfile} className={userData? "border border-[#E0E0E0] rounded-xl bg-white w-[480px] h-[256px] ml-[40px] xl:w-[100%] xl:ml-0 sm:w-[100%] sm:ml-0 xs:ml-0 xs:w-[100%] xxl:w-[90%] xl:mt-[20px] xs:mt-[20px] xxl:mt-[20px]" : "border border-[#E0E0E0] bg-white ml-[40px] w-[480px] h-[256px] flex items-center justify-center xl:w-[100%] xl:ml-0 sm:w-[100%] sm:ml-0 xs:ml-0 xs:w-[90%] rounded-xl xxl:w-[100%] xl:mt-[20px] xs:mt-[20px] xxl:mt-[20px]"}>
+                <div onClick={showAddProfile} className={userData? "border border-[#E0E0E0] rounded-xl bg-white w-[480px] h-[256px] ml-[40px] xl:w-[100%] xl:ml-0 sm:w-[100%] sm:ml-0 xs:ml-0 xs:w-[100%] xxl:w-[90%] xl:mt-[20px] xs:mt-[20px] xs:mb-[20px] xxl:mt-[20px] sm:mt-[20px] sm:mb-[20px]" : "border border-[#E0E0E0] bg-white ml-[40px] w-[480px] h-[256px] flex items-center justify-center xl:w-[100%] xl:ml-0 sm:w-[100%] sm:ml-0 xs:ml-0 xs:w-[90%] rounded-xl xxl:w-[100%] xl:mt-[20px] xs:mt-[20px] xxl:mt-[20px]"} style={{ overflow: 'scroll', maxWidth: '100%' }} >
                     <AddProfile/>
                 </div>
                 {displayAddProfile && (
