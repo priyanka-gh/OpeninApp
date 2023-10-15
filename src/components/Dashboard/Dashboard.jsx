@@ -90,7 +90,7 @@ const Dashboard = () => {
         <div className='ml-[4.188rem] mt-[61px] xl:ml-[1rem] xl:mr-[2rem] align-left sm:ml-[1rem] sm:mr-[2rem] sm:mt-0 xs:m-0 xxl:w-[60%]'>
             <div className='flex justify-between items-center sm:flex sm:flex-col xs:flex xs:flex-col'>
                 <h1 className="text-black font-montserrat font-bold text-[24px]">Dashboard</h1>
-                <div className='flex items-center sm:mt-[5px]'>
+                <div className='flex items-center sm:mt-[15px] xs:mt-[15px]'>
                     <div className='relative flex items-center'>
                     <input placeholder='Search...' className='relative w-[197.596px] h-[32.933px] mr-[13.79px] pt-[6px] pb-[9.93px] pl-[15px]'></input>
                     <div className='absolute left-[153px]' dangerouslySetInnerHTML={{ __html: searchsvg }}/>
