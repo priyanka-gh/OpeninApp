@@ -1,0 +1,14 @@
+img{
+    border-radius: 50%;
+}
+
+.custom-plot-container > js-plotly-plot > plot-container plotly > user-select-none {
+    width: 100px;
+    height: 100px;
+}
+
+.main__div{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}

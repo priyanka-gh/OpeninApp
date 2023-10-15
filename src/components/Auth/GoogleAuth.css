@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1024px) {
+    .main__div  {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right__side{
+      display: flex;
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .left__side{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        min-width: 100%;
+        padding-right: 0rem;
+    }
+
+    .inside__right{
+      margin: 0;
+      padding: 0;
+    }
+  }
