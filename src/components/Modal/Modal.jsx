@@ -4,11 +4,11 @@ const Modal = ({ setDisplayAddProfile }) => {
   const userData = JSON.parse(localStorage.getItem('userprofile'));
 
   const [formValue, setFormValue] = useState(0);
-  const [name, setName] = useState(userData.name || "");
-  const [email, setEmail] = useState(userData.email || "");
-  const [phone, setPhone] = useState(userData.phone || "");
-  const [instaLink, setInstaLink] = useState(userData.social.instaLink || "");
-  const [ytLink, setYtLink] = useState(userData.social.ytLink || "");
+  const [name, setName] = useState(userData?.name || "");
+  const [email, setEmail] = useState(userData?.email || "");
+  const [phone, setPhone] = useState(userData?.phone || "");
+  const [instaLink, setInstaLink] = useState(userData?.social.instaLink || "");
+  const [ytLink, setYtLink] = useState(userData?.social.ytLink || "");
 
   const highlightDivClass = (divNumber) => {
     if (divNumber === formValue) return "highlightDiv blue-div";

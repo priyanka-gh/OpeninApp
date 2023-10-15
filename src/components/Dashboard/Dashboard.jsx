@@ -58,9 +58,14 @@ const Dashboard = () => {
 
    const showAddProfile = () => setDisplayAddProfile(true);
 
+   const signout = () => {
+    localStorage.removeItem("user");
+    localStorage.removeItem("userprofile");
+    window.location.href = "/"
+   }
   return (
     <div className='flex bg-[#F8FAFF] xl:flex xl:flex-col sm:flex sm:flex-col xs:flex xs:flex-col'>
-        <div className='rounded-lg mt-[2.5rem] mb-[2.5rem] mx-[2.688rem] bg-gradient-to-b from-[#4285F4] to-[#3C83F9] w-[17.5rem] h-[59rem] xl:ml-[1rem] xl:w-[90%] xl:h-[9rem] sm:ml-[1rem] sm:w-[90%] sm:h-[9rem] xs:ml-[1rem] xs:pl-[1rem] xs:pt-[1rem] xs:w-[90%] xs:h-[16rem] xxl:mr-0'>
+        <div className='rounded-lg mt-[2.5rem] mb-[2.5rem] mx-[2.688rem] bg-gradient-to-b from-[#4285F4] to-[#3C83F9] w-[17.5rem] h-[59rem] xl:ml-[1rem] xl:w-[95%] xl:h-[9rem] sm:ml-[1rem] sm:w-[95%] sm:h-[9rem] xs:ml-[1rem] xs:pl-[1rem] xs:pt-[1rem] xs:w-[90%] xs:h-[16rem] xxl:mr-0'>
             <div className='pt-[3.75rem] pl-[3.125rem] xl:p-[5px] xl:flex xl:flex-col sm:p-[5px] sm:flex sm:flex-col xs:p-[5px] xs:flex xs:flex-col'>
             <h1 className='text-white font-montserrat font-bold text-[2.25rem] xl:text-[2rem] sm:text-[1.5rem] xs:text-[1.5rem]'>Board.</h1>
             <div className='mt-[3.75rem] xl:flex xl:flex-column xl:justify-evenly xl:m-0 sm:flex sm:flex-column sm:justify-evenly sm:m-0 xs:grid  xs:justify-evenly xs:m-0'>
@@ -96,7 +101,7 @@ const Dashboard = () => {
                     <div className='absolute left-[153px]' dangerouslySetInnerHTML={{ __html: searchsvg }}/>
                     </div>
                     <div dangerouslySetInnerHTML={{ __html: notifsvg }}/>
-                    <img className='w-[52px] h-[51px] flex-shrink-0 ml-[27.61px]' src={image}></img>
+                    <img onClick={signout} className='w-[52px] h-[51px] flex-shrink-0 ml-[27.61px]' src={image}></img>
                 </div>
             </div>
             <div>
