@@ -141,7 +141,7 @@ const Modal = ({ setDisplayAddProfile }) => {
 
   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 ">
-      <div className= {`bg-white rounded-lg sm:w-[70%] sm:h-[90%] xs:w-[70%] xs:h-[90%] ${formValue == 0 ? profileClass : otherClass}`}>
+      <div className= {`bg-white rounded-lg sm:w-[70%] sm:h-[80%] xs:w-[70%] xs:h-[80%] ${formValue == 0 ? profileClass : otherClass}`}>
         <div className="top-bar flex justify-between items-center h-[64px] pt-[16px] mb-[24px] px-[24px]">
           <h2 className="text-black font-Figtree text-[24px] font-semibold">Add New Profile</h2>
           <div onClick={() => {setDisplayAddProfile(false)}} dangerouslySetInnerHTML={{ __html: closesvg }}/>
